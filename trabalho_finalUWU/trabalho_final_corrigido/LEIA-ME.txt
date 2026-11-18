@@ -1,0 +1,8 @@
+COMO ABRIR NO INTELLIJ
+1) Apague os arquivos .dat antigos (categorias, eventos, participantes, inscricoes).
+   Eles foram gerados pela versao antiga e as categorias nao tem ID.
+2) Pasta src  -> botao direito > Mark Directory as > Sources Root (azul)
+3) Pasta test -> botao direito > Mark Directory as > Test Sources Root (verde)
+4) Adicione o JUnit 5: abra um arquivo da pasta test, clique em @Test,
+   Alt+Enter > "Add 'JUnit5.x' to classpath"
+5) Rodar o sistema: MainSistema (src). Rodar os testes: botao direito na pasta test > Run 'All Tests'.
