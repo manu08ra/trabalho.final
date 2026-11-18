@@ -1,14 +1,58 @@
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Evento implements Serializable {
     private static final long serialVersionUID = 1L;
+    private ArrayList<Participante> inscritos;
+
     private static int contadorId = 1;
     private int id;
     private String nome;
     private String modalidade;
+    private Date data; 
+    private String local; 
     private int capacidadeMax;
-    private ArrayList<Participante> inscritos;
+
+    //MÉTODOS SETTERS (atualizar)
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public void setModalidade(String modalidade){
+        this.modalidade = modalidade;
+    }
+
+    public void setData(Date data){
+        this.data = data;
+    }
+
+    public void setLocal(String local){
+        this.local = local;
+    }
+
+    public void setCapacidadeMax(int capacidadeMax){
+        this.capacidadeMax = capacidadeMax;
+    }
+
+    ////MÉTODOS GETTERS
+    
+    public String getModalidade() {
+        return modalidade;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public String getLocal() {
+        return local;
+    }
+
+    public int getCapacidadeMax() {
+        return capacidadeMax;
+    }
 
     public Evento(String nome, String modalidade, int capacidadeMax) {
         this.id = contadorId++;

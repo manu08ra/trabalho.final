@@ -24,6 +24,10 @@ public abstract class Pessoa implements Serializable {
         return this.nome;
     }
 
+    public String getTelefone() {
+        return this.telefone;
+    }
+
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
